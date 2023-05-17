@@ -1,0 +1,95 @@
+.hanoi{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 10vmin auto 0;
+    width: 130vmin;
+    height: 40vmin;
+}
+
+.hanoi .title{
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+.tower{
+    position: relative;
+    width: 40vmin;
+}
+
+.tower .rod{
+    position: absolute;
+    border-radius: 1vmin;
+    left: 17vmin;
+    width: 5vmin;
+    height: 35vmin;
+    background: linear-gradient(to right, #d7b889, #b27315, #966f33);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.tower .discs{
+    position: absolute;
+    bottom: 9.5vmin;
+    left: 4.5vmin;
+}
+
+.tower .disc{
+    display: flex;
+    z-index: 1;
+    border-radius: 1vmin;
+    height: 4vmin;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tower .disc.one {
+    margin: 0 10vmin;
+    width: 10vmin;
+    background: linear-gradient(to right, #eea668, #ed7e1d, #e67e22);
+}
+.tower .disc.two {
+    margin: 0 8vmin;
+    width: 14vmin;
+    background: linear-gradient(to right, #8ac4ea, #0f9fff, #3498db);
+}
+.tower .disc.three {
+    margin: 0 6vmin;
+    width: 18vmin;
+    background: linear-gradient(to right, #f0d775, #fc0, #e6bd19);
+}
+.tower .disc.four {
+    margin: 0 4vmin;
+    width: 22vmin;
+    background: linear-gradient(to right, #B96CE6, #864EA6, #A460CC);
+}
+.tower .disc.five {
+    margin: 0 2vmin;
+    width: 26vmin;
+    background: linear-gradient(to right, #7ee2a8, #09f16a, #2ecc71);
+}
+.tower .disc.six {
+    width: 30vmin;
+    background: linear-gradient(to right, #f2a097, #ff3a24, #e74c3c);
+}
+
+
+.hanoi .base {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    bottom: 2vmin;
+    border-radius: 1vmin;
+    width: 170vmin;
+    height: 7.5vmin;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent),
+    linear-gradient(#b27315, #966f33 13%, #faddb0 14.5%, #faddb0 27.5%, #966f33 29%, #966f33 42%, #faddb0 43.5%, #d7b889 56.5%, #966f33 58%, #966f33 71%, #d7b889 72.5%, #d7b889 85.5%, #966f33 87%, #b27315);
+}
